@@ -86,7 +86,7 @@ fn main() {
     let mut timestamp_saver = TimestampSaver::new(
         vec![Some(1),Some(2),Some(3)]
     );
-    timestamp_saver.grow(2);
-    println!("{:#?}",timestamp_saver);
-    println!("{:#?}",timestamp_saver.at(2));
+    timestamp_saver.grow(10);
+    println!("Grow: {:#?}",timestamp_saver);
+    println!("At: {:#?}",timestamp_saver.at(2));
 }
